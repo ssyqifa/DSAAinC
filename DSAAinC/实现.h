@@ -1,1 +1,4 @@
-#pragma once
+void DeleteList(List L)
+{
+
+}
