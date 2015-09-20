@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List.h" />
+    <ClInclude Include="实现.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3489A548-2300-4736-B16B-52A01531976E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>DSAAinC</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>List</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
