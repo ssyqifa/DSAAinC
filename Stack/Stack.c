@@ -63,6 +63,8 @@ void Pop(Stack S)
 	}
 }
 
+
+
 ElementType Top(Stack S)
 {
 	if (!IsEmpty(S))
