@@ -19,7 +19,7 @@ Stack CreatStack()
 	Stack S;
 	S = malloc(sizeof(struct Node));
 	if (S == NULL)
-		FatalError("Out of space!");
+		printf("Out of space!");
 	S->Next = NULL;
 	MakeEmpty(S);
 	return S;
@@ -28,7 +28,7 @@ Stack CreatStack()
 void MakeEmpty(Stack S)
 {
 	if (S == NULL)
-		Error("Must use CreatStack first");
+		printf("Must use CreatStack first");
 	else
 		while (!IsEmpty(S))
 		{
@@ -41,7 +41,7 @@ void Push(ElementType X, Stack S)
 	PtrToNode TmpCell;
 	TmpCell = malloc(sizeof(struct Node));
 	if (TmpCell  == NULL)
-		FatalError("Out of Space£¡");
+		printf("Out of Space£¡");
 	else
 	{
 		TmpCell->Element = X;
@@ -54,7 +54,7 @@ void Pop(Stack S)
 {
 	PtrToNode FirstCell;
 	if (IsEmpty(S))
-		Error("Empty Stack");
+		printf("Empty Stack");
 	else
 	{
 		FirstCell = S->Next;
@@ -71,7 +71,8 @@ ElementType Top(Stack S)
 		return S->Next->Element ;
 	else
 	{
-		Error("empty stack");
+		printf("empty stack");
+		return 0;
 	}
 }
 
